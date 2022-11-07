@@ -2,9 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const { Connection } = require('./Config/db');
 const { LoginRouter } = require('./Routes/Login.routes');
-const { SignupRouter } = require('./Routes/signup.routes');
 const { TodosRouter } = require('./Routes/Todos.routes');
 const { authentication } = require('./Middleware/Authentication');
+const { SignupRouter } = require('./Routes/Signup.routes');
 require('dotenv').config()
 const app = express();
 const PORT = process.env.PORT || 8000;
